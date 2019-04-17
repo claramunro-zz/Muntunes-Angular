@@ -21,12 +21,21 @@ export class SongService {
     this.songs.push(newSong);
   }
 
-  getSongById(songId: number){
-  //   for (var i = 0; i <= SONGS.length - 1; i++) {
-  //     if (SONGS[i].id === songId) {
-  //       return SONGS[i];
-  //     }
-  //   }
+  getSongById(songId: string){
+    return this.database.object('songs/' + songId);
+  }
+
+
+  updateSong(localUpdatedSong){
+    var songEntryInFirebase = this.getSongById(localUpdatedSong.$key);
+    songEntryInFirebase.update({title: localUpdatedSong.title,
+                                artist: localUpdatedSong.artist,
+                                description: localUpdatedSong.description});
+  }
+
+  deleteSong(localSongToDelete){
+    var songEntryInFirebase = this.getSongById(localSongToDelete.$key);
+    songEntryInFirebase.remove();
   }
 
 }

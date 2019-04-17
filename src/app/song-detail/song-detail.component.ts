@@ -14,8 +14,8 @@ import { SongService } from '../song.service';
 })
 
 export class SongDetailComponent implements OnInit {
-  songId: number = null;
-  songToDisplay: Song;
+  songId: string;
+  songToDisplay;
 
   constructor(
     private route: ActivatedRoute,
@@ -25,10 +25,9 @@ export class SongDetailComponent implements OnInit {
 
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
-      this.songId = parseInt(urlParameters['id']);
+      this.songId = urlParameters['id'];
     });  
-    // this.songToDisplay = this.songService.getSongById(this.songId);
-
+    this.songToDisplay = this.songService.getSongById(this.songId);
   }
 
 }

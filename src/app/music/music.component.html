@@ -1,8 +1,14 @@
 <h2>MUSIC</h2>
 <p>be choosy</p>
 
-  <div *ngFor="let song of songs | async" (click)="goToDetailPage(song)" class="panel panel-default">
-      <div class="panel-body">
-          <p><em>{{song.title}}</em> by {{song.artist}}</p>
-        </div>
+
+<div *ngFor="let song of songs | async" (click)="goToDetailPage(song)" class="panel panel-default">
+  <div class="panel-body">
+    <h3><em>{{song.title}}</em> by {{song.artist}}</h3>
+    <div *ngIf="currentRoute === '/admin'">
+      {{song.description}}
+      <hr>
+      <app-edit-song [selectedSong]="song"></app-edit-song>
     </div>
+  </div>
+</div>
