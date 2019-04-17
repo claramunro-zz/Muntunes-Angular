@@ -1,27 +1,48 @@
-# Munro3
+# MUNTUNES
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
+Designed to promote awesome songs- this web app allows anyone to upload a tune they are currently into.
 
-## Development server
+# Specs
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+THINGS HERE 
+THINGS HERE
+THINGS HERE
 
-## Code scaffolding
+# WIREFRAMES
+* WILL ADD MORE WHEN DONE
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+![Screenshot](/wireframe-images/inspo.png)
 
-## Build
+# Setup Instructions
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Download Node.js
 
-## Running unit tests
+* Clone this repository using the "$ git clone" command
+* Open in preferred text editor to see code used
+* Edit the api-keys.ts file in the src/app directory with your own Firebase keys
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+*  "$ npm i" in root directory
+*  "$ ng build" in root directory
+*  "$ ng serve" in root directory to open locally in browser
 
-## Running end-to-end tests
+# Languages / Libraries Used
+* HTML / CSS / SCSS
+* Bootstrap
+* JavaScript ES6
+* Node.js
+* Typescript
+* Firebase
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+# Github Repository Link
+* LINK HERE
 
-## Further help
+# Known Bugs
+* UPDATE THIS WHEN DONE
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+# Contact
+* clarajmunro@gmail.com for questions
+
+# License
+* MIT License
+
+Copyright (c) 2019 Clara Munro
