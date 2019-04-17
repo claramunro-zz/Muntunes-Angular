@@ -1,1 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Cute+Font');
+
+* {
+    color: white;
+}
+
+.navbar {
+    color: white;
+    background-color: rgb(236, 0, 0);
+}
+
+.nav-link {
+    color: rgb(230, 230, 230);
+    font-weight: 700;
+    
+}
+
+body {
+    color: white;
+    background-color: rgb(0, 0, 0);
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Cute Font', cursive;
+    font-size: 4em;
+}
+
+h2, h3 {
+    font-family: 'Cute Font', cursive;
+}
+
+p {
+    color: white;
+}
+
+.page {
+    background-color: rgb(0, 47, 255);
+}

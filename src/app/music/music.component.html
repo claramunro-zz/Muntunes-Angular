@@ -1,0 +1,8 @@
+<h2>MUSIC</h2>
+<p>be choosy</p>
+
+  <div *ngFor="let song of songs" (click)="goToDetailPage(song)" class="panel panel-default">
+      <div class="panel-body">
+          <p><em>{{song.title}}</em> by {{song.artist}}</p>
+        </div>
+    </div>
