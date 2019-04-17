@@ -2,9 +2,14 @@
 @import url('https://fonts.googleapis.com/css?family=Cute+Font');
 
 
+input {
+    padding-right: 15px;
+}
+
 .navbar {
     color: white;
     background-color: rgb(236, 0, 0);
+    height: 80px;
 }
 
 .nav-link {
@@ -17,6 +22,10 @@ body {
     color: white;
     background-color: rgb(0, 0, 0);
     padding: 0;
+}
+
+.container-wrapper {
+    height: calc(100vh - 200px) !important;
 }
 
 h1 {

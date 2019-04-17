@@ -23,11 +23,24 @@ export class SongDetailComponent implements OnInit {
     private songService: SongService
     ) {}
 
+  // ngOnInit() {
+  //   this.route.params.forEach((urlParameters) => {
+  //     this.songId = urlParameters['id'];
+  //   });  
+  //   this.songToDisplay = this.songService.getSongById(this.songId);
+  // }
+
   ngOnInit() {
-    this.route.params.forEach((urlParameters) => {
-      this.songId = urlParameters['id'];
-    });  
-    this.songToDisplay = this.songService.getSongById(this.songId);
+    this.route.params.forEach((urlParametersArray) => {
+     this.songId = urlParametersArray['id'];
+   });
+   this.songService.getSongById(this.songId).subscribe(dataLastEmittedFromObserver => {
+     this.songToDisplay = new Song(dataLastEmittedFromObserver.title,
+                                      dataLastEmittedFromObserver.artist,
+                                      dataLastEmittedFromObserver.description)
+   })
   }
+
+  
 
 }
