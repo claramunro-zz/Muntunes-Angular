@@ -1,0 +1,26 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">ADD</h3>
+  </div>
+
+  <div class="panel-body">
+    <div>
+      <label>Song</label>
+      <br>
+      <input #newTitle>
+    </div>
+
+    <div>
+      <label>Artist</label>
+      <br>
+      <input #newArtist>
+    </div>
+
+    <div>
+      <label>Why</label>
+      <br>
+      <textarea #newDescription></textarea>
+    </div>
+    <button (click)="submitForm(newTitle.value, newArtist.value, newDescription.value); newTitle.value=''; newArtist.value=''; newDescription.value=''">GET IT</button>
+  </div>
+</div>

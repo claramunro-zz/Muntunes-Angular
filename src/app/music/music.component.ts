@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Song } from '../song.model';
 import { Router } from '@angular/router';
 import { SongService } from '../song.service';
+import { FirebaseListObservable } from 'angularfire2/database';
 
 
 @Component({
@@ -14,9 +15,7 @@ import { SongService } from '../song.service';
 
 
 export class MusicComponent implements OnInit {
-
-  songs: Song[];
-
+  songs: FirebaseListObservable<any[]>;
 
   constructor(private router: Router, private songService: SongService) {}
 
@@ -27,6 +26,6 @@ export class MusicComponent implements OnInit {
   }
 
  goToDetailPage(clickedSong: Song) {
-  this.router.navigate(['songs', clickedSong.id]);
+  // this.router.navigate(['songs', clickedSong.id]);
 };
 }

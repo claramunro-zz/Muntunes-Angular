@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent }   from './about/about.component';
 import { MusicComponent }   from './music/music.component';
 import { SongDetailComponent }   from './song-detail/song-detail.component';
+import { AdminComponent } from './admin/admin.component';
 
 
 
@@ -23,6 +24,10 @@ const appRoutes: Routes = [
   {
     path: 'songs/:id',
     component: SongDetailComponent
+  },
+  {
+    path: 'admin',
+    component: AdminComponent
   }
  ];
 

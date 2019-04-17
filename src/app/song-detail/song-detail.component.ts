@@ -27,7 +27,7 @@ export class SongDetailComponent implements OnInit {
     this.route.params.forEach((urlParameters) => {
       this.songId = parseInt(urlParameters['id']);
     });  
-    this.songToDisplay = this.songService.getSongById(this.songId);
+    // this.songToDisplay = this.songService.getSongById(this.songId);
 
   }
 
