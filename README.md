@@ -2,14 +2,18 @@
 
 Designed to promote awesome songs- this web app allows anyone to upload a tune they are currently into.
 
-# Firebase Link
-* LINK HERE
+https://muntunes-app.firebaseapp.com/
+
+# FUTURE COMPONENTS
+* Adding User Authentication & Profiles
+  ** Login Page / Sign In Page
+  ** User Profile Page
+  ** Edit User Profile Pages
 
 # Specs
-
-THINGS HERE 
-THINGS HERE
-THINGS HERE
+* Music Page: 
+* Add Page: Enter a song title, artist & why
+* 
 
 # WIREFRAMES
 * WILL ADD MORE WHEN DONE
@@ -25,7 +29,6 @@ Download Node.js
 * Edit the api-keys.ts file in the src/app directory with your own Firebase keys
 
 *  "$ npm i" in root directory
-*  "$ ng build" in root directory
 *  "$ ng serve" in root directory to open locally in browser
 
 # Languages / Libraries Used
