@@ -13,13 +13,24 @@ import { Song } from '../song.model';
 })
 export class AdminComponent implements OnInit {
 
+  selectedFileSource: any;
+
   constructor(private songService: SongService) { }
 
   ngOnInit() {
   }
 
-  submitForm(title: string, artist: string, description: string) {
-    var newSong: Song = new Song(title, artist, description);
+  getSource(imageSource){
+    this.selectedFileSource = imageSource;
+    console.log(imageSource)
+  }
+
+  submitForm(
+    title: string,
+    artist: string,
+    description: string)
+    {
+    var newSong: Song = new Song(title, artist, description, this.selectedFileSource);
     this.songService.addSong(newSong);
   }
 

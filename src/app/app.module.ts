@@ -16,6 +16,7 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AdminComponent } from './admin/admin.component';
 import { EditSongComponent } from './edit-song/edit-song.component';
+import { ImageUploadComponent } from './image-upload/image-upload.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -32,7 +33,8 @@ export const firebaseConfig = {
     MusicComponent,
     SongDetailComponent,
     AdminComponent,
-    EditSongComponent
+    EditSongComponent,
+    ImageUploadComponent
   ],
   imports: [
     BrowserModule,

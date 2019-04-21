@@ -2,6 +2,9 @@
 
 Designed to promote awesome songs- this web app allows anyone to upload a tune they are currently into.
 
+# Firebase Link
+* LINK HERE
+
 # Specs
 
 THINGS HERE 

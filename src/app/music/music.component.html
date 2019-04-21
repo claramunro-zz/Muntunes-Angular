@@ -3,6 +3,8 @@
 <div *ngFor="let song of songs | async" (click)="goToDetailPage(song)" class="panel panel-default">
   <div class="panel-body">
     <h3><em>{{song.title}}</em> by {{song.artist}}</h3>
+    <img id="img-music-page" src="{{song.source}}">
+
     <div *ngIf="currentRoute === '/admin'">
       {{song.description}}
       <hr>

@@ -25,9 +25,7 @@ export class EditSongComponent implements OnInit {
   }
 
   beginDeletingSong(songToDelete){
-    if(confirm("Are you sure you want to delete this item from the inventory?")){
       this.songService.deleteSong(songToDelete);
     }
-  }
 
 }

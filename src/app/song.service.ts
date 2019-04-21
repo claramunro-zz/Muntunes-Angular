@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { SONGS } from './mock-songs';
 import { Song } from './song.model';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
@@ -30,7 +29,8 @@ export class SongService {
     var songEntryInFirebase = this.getSongById(localUpdatedSong.$key);
     songEntryInFirebase.update({title: localUpdatedSong.title,
                                 artist: localUpdatedSong.artist,
-                                description: localUpdatedSong.description});
+                                description: localUpdatedSong.description
+                              });
   }
 
   deleteSong(localSongToDelete){
