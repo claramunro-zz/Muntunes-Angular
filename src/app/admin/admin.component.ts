@@ -28,9 +28,10 @@ export class AdminComponent implements OnInit {
   submitForm(
     title: string,
     artist: string,
-    description: string)
+    Date: string,
+    why: string)
     {
-    var newSong: Song = new Song(title, artist, description, this.selectedFileSource);
+    var newSong: Song = new Song(title, artist, Date, why, this.selectedFileSource);
     this.songService.addSong(newSong);
   }
 

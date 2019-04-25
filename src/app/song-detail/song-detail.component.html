@@ -1,6 +1,7 @@
-<div>
-  <h3>{{songToDisplay?.title}}</h3>
-  <h4>{{songToDisplay?.artist}}</h4>
-  <p>{{songToDisplay?.description}}</p>
-  <img class="img-music-page" src="{{songToDisplay?.source}}">
+<div id="detailSection">
+  <img id="photoDetail" src="{{songToDisplay?.source}}">
+  <h1 id="titleDetail">{{songToDisplay?.title}}</h1>
+  <h2 id="artistDetail">{{songToDisplay?.artist}}</h2>
+  <p id="dateDetail">{{songToDisplay?.Date}}</p>
+  <p id="whyDetail">{{songToDisplay?.why}}</p>
 </div>

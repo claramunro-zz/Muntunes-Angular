@@ -9,7 +9,7 @@ class ImageSnippet {
 @Component({
   selector: 'app-image-upload',
   templateUrl: './image-upload.component.html',
-  styleUrls: ['./styles/image-upload.component.scss', './styles/animation.css']
+  styleUrls: ['./image-upload.component.css']
 })
 export class ImageUploadComponent {
   @Output() clickSender = new EventEmitter();

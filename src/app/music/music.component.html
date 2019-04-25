@@ -1,13 +1,17 @@
-<h1>MUSIC</h1>
+<div *ngIf="currentRoute === '/admin'">
+  <h1 id="update">UPDATE</h1>
+  <br>
+</div>
 
-<div *ngFor="let song of songs | async" (click)="goToDetailPage(song)" class="panel panel-default">
-  <div class="panel-body">
-    <h3><em>{{song.title}}</em> by {{song.artist}}</h3>
-    <img id="img-music-page" src="{{song.source}}">
+<div *ngFor="let song of songs | async" (click)="goToDetailPage(song)">
+  
+  <div class ="hvr-grow" id="songSection">
+    <img id="songPhoto" src="{{song.source}}">
+    <h2 id="songTitle">{{song.title}}</h2> 
+    <h4 id="songArtist">{{song.artist}}</h4>
+    <p id="songDate">{{song.Date}}</p>
 
     <div *ngIf="currentRoute === '/admin'">
-      {{song.description}}
-      <hr>
       <app-edit-song [selectedSong]="song"></app-edit-song>
     </div>
   </div>

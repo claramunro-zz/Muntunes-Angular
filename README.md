@@ -28,6 +28,15 @@ Download Node.js
 * Open in preferred text editor to see code used
 * Edit the api-keys.ts file in the src/app directory with your own Firebase keys
 
+export const masterFirebaseConfig = {
+    apiKey: xxxx
+    authDomain: xxxx
+    databaseURL: xxxx
+    projectId: xxxx
+    storageBucket: xxxx
+    messagingSenderId: xxxx
+  };
+
 *  "$ npm i" in root directory
 *  "$ ng serve" in root directory to open locally in browser
 

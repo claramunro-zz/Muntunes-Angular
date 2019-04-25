@@ -1,29 +1,35 @@
 
-<div class="container-fluid">
-  <nav class="navbar navbar-expand-lg navbar-primary fixed-bottom navbar-right">
-    <span class="navbar-brand" routerLink=""><img src="./assets/img/logo.png" id="logo" width="100" height="100"
-        class="d-inline-block align-top" alt="">
-    </span>
-    <div class="page-links">
-      <ul class="nav navbar-nav navbar-right">
-        <li class="nav-item">
-          <a class="nav-link" routerLink="">HOME</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="about">ABOUT</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="music">MUSIC</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="admin">ADD</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-</div>
 
-<body class="container-wrapper">
+  <nav class="navbar navbar-expand-md navbar-light bg-dark fixed-bottom">
+      <div class="container-fluid">
+        <a class="navbar-brand" routerLink="music"><img src="./assets/img/favicon.png" id="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item" active>
+                  <a class="nav-link" routerLink="">MUNRO</a>
+                </li>
+                <li class="nav-item" active>
+                  <a class="nav-link" routerLink="music">MUSIC</a>
+                </li>
+                <li class="nav-item" active>
+                  <a class="nav-link" routerLink="admin">NEW</a>
+                </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+
+
+
+
+<body>
   <div>
     <router-outlet></router-outlet>
   </div>

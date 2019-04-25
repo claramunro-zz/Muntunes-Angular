@@ -37,8 +37,9 @@ export class SongDetailComponent implements OnInit {
    this.songService.getSongById(this.songId).subscribe(dataLastEmittedFromObserver => {
      this.songToDisplay = new Song(dataLastEmittedFromObserver.title,
                                       dataLastEmittedFromObserver.artist,
-                                      dataLastEmittedFromObserver.description,
-                                      dataLastEmittedFromObserver.soure
+                                      dataLastEmittedFromObserver.Date,
+                                      dataLastEmittedFromObserver.why,
+                                      dataLastEmittedFromObserver.source
                                       )
    })
   }

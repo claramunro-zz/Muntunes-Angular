@@ -1,34 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css?family=Cute+Font');
+@import url('https://fonts.googleapis.com/css?family=B612+Mono|Roboto');
 
 
-input {
-    padding-right: 15px;
-}
 
-#img-music-page {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 10px;
-}
+/* add background, hover effects, sass,  click logo take you home*/
 
-.navbar {
-    color: rgb(0, 0, 0);
-    background-color: rgba(225, 0, 255, 0.137);
-    height: 80px;
-    box-shadow: 0px -10px 5px black 20;
-    padding: 100px;
-}
-
-.nav-link {
-    color: rgb(255, 255, 255);
-    font-weight: 700;
-    box-shadow: 0px -4px 5px black 20;
-}
-
-.nav-link:hover {
-    color: rgb(240, 38, 240);
+* {
+    text-transform: lowercase;
 }
 
 body {
@@ -37,20 +14,298 @@ body {
     padding: 100px;
 }
 
-/* .container-wrapper {
-    height: calc(100vh - 200px) !important;
-} */
 
-h1 {
-    font-family: 'Cute Font', cursive;
-    font-size: 4em;
-    color: rgb(168, 168, 168);
+
+
+
+/* NAV AREA */
+
+#logo {
+    cursor: pointer;
+    width: 30px;
 }
 
-h2, h3 {
-    font-family: 'Cute Font', cursive;
+#float {
+    float: right;
+  }
+
+.navbar {
+    color: rgb(94, 255, 0);
+    background-color: rgba(0, 0, 0, 0.829);
+    height: 80px;
+    box-shadow: 15px 10px 18px 10px #888888;
+    padding: 80px;
+}
+
+  .navbar-light .navbar-nav .nav-link {
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    box-shadow: 0px -4px 5px black 20;
+    padding: 80px;
+    font-family: 'B612 Mono', monospace;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    text-shadow: 2px 2px 4px #fc00e7b9;
+    color: white;
+}
+
+button.navbar-toggler {
+    color: white;
+}
+
+
+
+
+
+
+/* TYPE AREA */
+
+h1 {
+    font-family: 'B612 Mono', monospace;
+    font-size: 3em;
+    color: rgb(223, 223, 223);
+}
+
+h2, h3, h4 {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(216, 216, 216);
+    font-size: 1.4em;
 }
 
 p {
     color: rgb(133, 133, 133);
+    font-family: 'Roboto', sans-serif;
+    font-size: .8em;
 }
+
+
+
+
+
+/* BUTTON AREA */
+
+button {
+    background-color: black;
+    color: white;
+    padding: .2em 1em .2em 1em;
+    font-size: .8em;
+    width: 120px;;
+    height: 30px;
+}
+
+
+
+
+
+/* INPUT AREA */
+
+input {
+    padding: .3em;
+    margin: .3em;
+    width: 300px;
+}
+
+::placeholder {
+    color: rgb(187, 187, 187);
+    padding-left: 10px;
+    font-family: 'B612 Mono', monospace;
+}
+
+
+
+
+/* NEW PAGE */
+
+#updateSection {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+#imageUploadButton {
+    font-size: .8em;
+    color: white;
+}
+
+#imgButton {
+    background-color: black;
+    color: white;
+    padding: .2em 1em .2em 1em;
+    width: 120px;;
+    height: 30px;
+    cursor: pointer;
+}
+
+.imageUploadButton {
+    font-size: .8em;
+}
+
+.img-preview {
+    background: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+    width: 120px;
+    height: 120px;
+    border-radius: 5px;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+
+
+
+
+
+/* MUSIC PAGE */
+
+#songSection {
+    padding-bottom: 100px;
+}
+
+#songPhoto {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+#songTitle {
+    padding: 1em 0 0 .5em;
+    color: black;
+}
+
+#songArtist {
+    padding-left: .5em;
+    color: rgb(197, 197, 197);
+}
+
+#songDate {
+    padding-left: 1.5em;
+    color: rgb(214, 214, 214);
+}
+
+#songWhy {
+    padding-left: 1.5em;
+    color: rgb(104, 104, 104);
+}
+
+
+
+
+
+
+
+/* MUSIC DETAIL PAGE */
+
+#detailSection {
+    border: rgb(255, 0, 255) 2px solid;
+    border-radius: 5px;
+    padding: 4em;
+}
+
+#photoDetail {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+#titleDetail {
+    font-family: 'B612 Mono', monospace;
+    font-size: 3em;
+    color: rgb(44, 44, 44);
+    padding-top: 5%;
+}
+
+
+
+
+
+
+
+/* OTHER */
+
+.navbar-toggler {
+    color: rgb(106, 158, 207);
+}
+
+input {
+    cursor: text;
+}
+
+
+
+
+/* MEDIA QUERIES */
+
+
+@media (max-width: 992px) {
+    body {
+        color: rgb(194, 194, 194);
+        background-color: #f8f8f8;
+        padding: 60px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    body {
+        color: rgb(194, 194, 194);
+        background-color: #f8f8f8;
+        padding: 60px;
+    }
+}
+
+
+
+@media (max-width: 576px) {
+
+    body {
+        background-color: #f8f8f8;
+        padding: 20px;
+    }
+    #songSection {
+        padding-left: 100px;
+    }
+
+}
+
+
+
+
+/* ANIMATIONS */
+
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+  .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  
+  /* Shrink */
+  .hvr-shrink {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+  .hvr-shrink:hover, .hvr-shrink:focus, .hvr-shrink:active {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }

@@ -29,7 +29,8 @@ export class SongService {
     var songEntryInFirebase = this.getSongById(localUpdatedSong.$key);
     songEntryInFirebase.update({title: localUpdatedSong.title,
                                 artist: localUpdatedSong.artist,
-                                description: localUpdatedSong.description
+                                date: localUpdatedSong.Date,
+                                why: localUpdatedSong.why
                               });
   }
 

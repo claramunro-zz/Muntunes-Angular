@@ -8,10 +8,13 @@ input {
   
   .img-preview-container {
     position: relative;
+    padding-bottom: 20px;
+
     .img-preview {
+      padding-bottom: 20px;
       background: left;
       background-repeat: no-repeat;
       background-size: contain;
-      height: 100px;
+      height: 120px;
     }
   }
