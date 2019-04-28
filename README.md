@@ -2,6 +2,8 @@
 
 Designed to promote awesome songs- this web app allows anyone to upload a tune they are currently into.
 
+[![Image from Gyazo](https://i.gyazo.com/145930793078ac699f67f01e65455016.gif)](https://gyazo.com/145930793078ac699f67f01e65455016)
+
 https://muntunes-app.firebaseapp.com/
 
 # FUTURE COMPONENTS
