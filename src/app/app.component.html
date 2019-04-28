@@ -1,19 +1,18 @@
 
 
  <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a routerLink="" class="clothing-nav">MUNRO</a>
-    <a routerLink="music" class="adventure-nav">MUSIC</a>
-    <a routerLink="admin" class="ceramics-nav">NEW</a>
+    <a href="javascript:void(0)" id="closebtn" class="hvr-grow" onclick="closeNav()">&times;</a>
+    <div id="moveDown">
+        <a routerLink="" class="hvr-grow">A HYMN</a>
+        <a routerLink="music" class="hvr-grow">MUSIC WALL</a>
+        <a routerLink="admin" class="hvr-grow">NEW / UPDATE</a>
+    </div>
+
   </div>
-  <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="nav-hamburger">&#9776;</span>
-
-
-
-
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="nav-hamburger hvr-grow">&#9776;</span>
 
 <body>
-  <div>
+
     <router-outlet></router-outlet>
-  </div>
+
 </body>

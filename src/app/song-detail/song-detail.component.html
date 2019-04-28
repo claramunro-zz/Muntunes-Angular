@@ -2,10 +2,11 @@
   <img id="photoDetail" src="{{songToDisplay?.source}}">
   <h1 id="titleDetail">{{songToDisplay?.title}}</h1>
   <h2 id="artistDetail">{{songToDisplay?.artist}}</h2>
-  <p id="dateDetail">{{songToDisplay?.Date}}</p>
+  <p id="dateDetail">{{songToDisplay?.date}}</p>
+  <p id="whoDetail">{{songToDisplay?.who}}</p>
   <p id="whyDetail">{{songToDisplay?.why}}</p>
 </div>
 
-<div>
-    <button routerLink="/music"><--</button>
+<div class="hvr-grow" id="backButton">
+    <a routerLink="/music"><i class="fas fa-long-arrow-alt-left"></i></a>
 </div>

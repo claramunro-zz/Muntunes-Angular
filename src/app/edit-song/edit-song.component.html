@@ -1,7 +1,8 @@
-<div>
+<div id="editArea">
         <input [(ngModel)]="selectedSong.title">
         <input [(ngModel)]="selectedSong.artist">
         <input [(ngModel)]="selectedSong.date">
+        <input [(ngModel)]="selectedSong.who">
         <input [(ngModel)]="selectedSong.why">
         
         <button (click)="beginUpdatingSong(selectedSong)">UPDATE</button>

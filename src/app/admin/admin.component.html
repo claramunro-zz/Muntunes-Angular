@@ -6,13 +6,15 @@
       <br>
       <input #newArtist placeholder="ARTIST">
       <br>
-      <input #newDate placeholder="DATE" type="number" number>
+      <input #newDate placeholder="DATE" type="date" number>
+      <br>
+      <input #newWho placeholder="WHO"> 
       <br>
       <input #newWhy placeholder="WHY"> 
       <br>
       <app-image-upload (clickSender)="getSource($event)"></app-image-upload>
     </div>
-    <button (click)="submitForm(newTitle.value, newArtist.value, newDate.value, newWhy.value); newTitle.value=''; newArtist.value=''; newDate.value=''; newWhy.value='' ">submit</button>
+    <button (click)="submitForm(newTitle.value, newArtist.value, newDate.value, newWho.value, newWhy.value); newTitle.value=''; newArtist.value=''; newDate.value=''; newWho.value=''; newWhy.value='' ">submit</button>
 </div>
 
 <div id="updateSection">
