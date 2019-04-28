@@ -2,15 +2,15 @@
 
 <div>
     <div>
-      <input #newTitle placeholder="SONG">
+      <input #newTitle placeholder="SONG" required>
       <br>
-      <input #newArtist placeholder="ARTIST">
+      <input #newArtist placeholder="ARTIST" required>
       <br>
-      <input #newDate placeholder="DATE" type="date" number>
+      <input #newDate placeholder="DATE" type="date" required>
       <br>
-      <input #newWho placeholder="WHO"> 
+      <input #newWho placeholder="WHO" required> 
       <br>
-      <input #newWhy placeholder="WHY"> 
+      <input #newWhy placeholder="WHY" required> 
       <br>
       <app-image-upload (clickSender)="getSource($event)"></app-image-upload>
     </div>
