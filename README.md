@@ -5,9 +5,6 @@ Designed to promote awesome songs- this web app allows anyone to upload a tune t
 [![Image from Gyazo](https://i.gyazo.com/145930793078ac699f67f01e65455016.gif)](https://gyazo.com/145930793078ac699f67f01e65455016)
 
 
-<a href="https://gyazo.com/145930793078ac699f67f01e65455016"><img src="https://i.gyazo.com/145930793078ac699f67f01e65455016.gif" alt="Image from Gyazo" width="960"/></a>
-
-
 https://muntunes-app.firebaseapp.com/
 
 # FUTURE COMPONENTS
