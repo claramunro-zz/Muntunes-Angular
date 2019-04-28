@@ -1,8 +1,47 @@
 @import url('https://fonts.googleapis.com/css?family=B612+Mono|Roboto');
 
+  .nav-hamburger {
+    color: rgb(129, 129, 129);
+    position: fixed;
+    right: 0;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  
+  /* NAVBAR */
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #e700fc;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    opacity: 3.5px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 35px;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+    transition: 0.5s;
+    color: rgb(255, 255, 255);
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
 
-
-/* add background, hover effects, sass,  click logo take you home*/
 
 * {
     text-transform: lowercase;
@@ -11,7 +50,7 @@
 body {
     color: rgb(194, 194, 194);
     background-color: rgb(248, 248, 248);
-    padding: 100px;
+    padding: 2em;
 }
 
 
@@ -113,7 +152,11 @@ input {
 }
 
 
-
+#musicBlock {
+    width: 300px;
+    padding: 2em;
+    display: inline;
+}
 
 /* NEW PAGE */
 

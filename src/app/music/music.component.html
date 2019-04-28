@@ -3,15 +3,13 @@
   <br>
 </div>
 
-<div *ngFor="let song of songs | async">
-  
+<div id="musicBlock" *ngFor="let song of songs | async" (click)="goToDetailPage(song)">
   <div class ="hvr-grow" id="songSection">
     <img id="songPhoto" src="{{song.source}}">
     <h2 id="songTitle">{{song.title}}</h2> 
     <h4 id="songArtist">{{song.artist}}</h4>
     <p id="songDate">{{song.date}}</p>
     <p id="songWhy">{{song.why}}</p>
-
     <div *ngIf="currentRoute === '/admin'">
       <app-edit-song [selectedSong]="song"></app-edit-song>
     </div>

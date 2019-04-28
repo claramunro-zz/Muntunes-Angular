@@ -1,29 +1,12 @@
 
 
-  <nav class="navbar navbar-expand-md navbar-light bg-dark fixed-bottom">
-      <div class="container-fluid">
-        <a class="navbar-brand" routerLink="music"><img src="./assets/img/favicon.png" id="logo"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-              <li class="nav-item" active>
-                  <a class="nav-link" routerLink="">MUNRO</a>
-                </li>
-                <li class="nav-item" active>
-                  <a class="nav-link" routerLink="music">MUSIC</a>
-                </li>
-                <li class="nav-item" active>
-                  <a class="nav-link" routerLink="admin">NEW</a>
-                </li>
-
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-
+ <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a routerLink="" class="clothing-nav">MUNRO</a>
+    <a routerLink="music" class="adventure-nav">MUSIC</a>
+    <a routerLink="admin" class="ceramics-nav">NEW</a>
+  </div>
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="nav-hamburger">&#9776;</span>
 
 
 
