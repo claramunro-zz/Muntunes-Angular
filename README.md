@@ -1,27 +1,19 @@
-# MUNTUNES
+# MUNTUNES :headphones:
 
-Designed to promote awesome songs- this web app allows anyone to upload a tune they are currently into.
+Muntunes is an exploration in implementing CRUD with Angular. Muntunes allows anyone to upload a song they are currently into. Users can create a new song post with values such as song title, artist, a photo, who's uploading & the reason why they like the song. Pages include a home page, the music wall & a new/update page for editing existing posts. All hosted on firebase.
 
-[![Image from Gyazo](https://i.gyazo.com/145930793078ac699f67f01e65455016.gif)](https://gyazo.com/145930793078ac699f67f01e65455016)
+<table>
+  <td><img src="/wireframe-images/mockup1.gif" /></td>
+  <td><img src="/wireframe-images/mockup2.gif" /></td>  
+</table>
 
-
-https://muntunes-app.firebaseapp.com/
+Live Link: https://muntunes-app.firebaseapp.com/
 
 # FUTURE COMPONENTS
 * Adding User Authentication & Profiles
-  ** Login Page / Sign In Page
+  ** Login Page / Sign Up Page
   ** User Profile Page
   ** Edit User Profile Pages
-
-# Specs
-* Music Page: 
-* Add Page: Enter a song title, artist & why
-* 
-
-# WIREFRAMES
-* WILL ADD MORE WHEN DONE
-
-![Screenshot](/wireframe-images/inspo.png)
 
 # Setup Instructions
 
@@ -50,12 +42,6 @@ export const masterFirebaseConfig = {
 * Node.js
 * Typescript
 * Firebase
-
-# Github Repository Link
-* LINK HERE
-
-# Known Bugs
-* UPDATE THIS WHEN DONE
 
 # Contact
 * clarajmunro@gmail.com for questions
