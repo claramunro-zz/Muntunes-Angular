@@ -10,10 +10,10 @@ Muntunes is an exploration in implementing CRUD with Angular. Muntunes allows an
 Live Link: https://muntunes-app.firebaseapp.com/
 
 # FUTURE COMPONENTS
-* Adding User Authentication & Profiles
-  ** Login Page / Sign Up Page
-  ** User Profile Page
-  ** Edit User Profile Pages
+* Add User Authentication & Profiles
+* Login Page / Sign Up Page
+* User Profile Page
+* Edit User Profile Page
 
 # Setup Instructions
 
