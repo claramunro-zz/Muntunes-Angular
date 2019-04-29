@@ -4,7 +4,7 @@ Muntunes is an exploration in implementing CRUD with Angular. Muntunes allows an
 
 <table>
   <td><img src="/wireframe-images/mockup1.gif" /></td>
-  <td><img src="/wireframe-images/mockup2.gif" /></td>  
+  <td><img src="/wireframe-images/mockup3.gif" /></td>  
 </table>
 
 Live Link: https://muntunes-app.firebaseapp.com/
